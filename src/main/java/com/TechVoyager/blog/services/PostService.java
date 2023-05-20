@@ -12,7 +12,7 @@ public interface PostService {
 
     //update
 
-    Post updatePost(PostDto postDto, Integer postId);
+    PostDto updatePost(PostDto postDto, Integer postId);
 
     //delete
 
@@ -20,19 +20,19 @@ public interface PostService {
 
     //get all posts
 
-    List<Post> getAllPost();
+    List<PostDto> getAllPost();
 
     //get single post
 
-    Post getPostById(Integer postId);
+    PostDto getPostById(Integer postId);
 
     //get all posts by category
 
-    List<Post> getPostByCategory(Integer categoryId);
+    List<PostDto> getPostByCategory(Integer categoryId);
 
 
     //get all posts by user
-    List<Post> getPostByUser(Integer userId);
+    List<PostDto> getPostByUser(Integer userId);
 
     //search posts
     List<Post> searchPosts(String keyword);
